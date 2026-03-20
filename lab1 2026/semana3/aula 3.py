@@ -102,3 +102,49 @@ if valor > 100:
     desconto = valor * 0.10
     valorF = valor - desconto
     print(valorF)'''
+
+#As perguntas são as seguintes:
+#Você esteve no local do crime?
+#Você conhece a vítima?
+#Você já teve algum desentendimento com a vítima?
+#Você estava próximo ao local na hora do ocorrido?
+#Você tem algo que comprove sua inocência?
+#🔧 Regras do programa:
+#Para cada resposta "sim", o programa deve somar 1 ponto.
+#Para cada resposta "não", não soma nada.
+#Use uma variável para armazenar essa contagem.
+
+#🎯 Classificação final:
+#Após fazer todas as perguntas, o programa deve analisar a quantidade de respostas "sim" e classificar a pessoa da seguinte forma:
+#Se o total de respostas "sim" for maior ou igual a 3, o programa deve mostrar:
+# "Pessoa suspeita."
+#Caso contrário, deve mostrar:
+# "Pessoa não considerada suspeita."
+
+'''
+local = str(input("Você esteve no local do crime? "))
+conhece = str(input("Você conhece a vítima? "))
+desentendimento = str(input("Você já teve algum desentendimento com a vítima? "))
+proximo = str(input("Você estava próximo ao local na hora do ocorrido? "))
+comprove = str(input("Você tem algo que comprove sua inocência? "))
+contador = 0
+
+if local == "Sim":
+    contador = contador + 1
+
+if conhece == "Sim":
+    contador = contador + 1
+
+if desentendimento == "Sim":
+    contador = contador + 1  
+
+if proximo == "Sim":
+    contador = contador + 1
+
+if comprove == "Sim":
+    contador = contador + 1
+
+if contador >= 3:
+    print("Pessoa suspeita")
+else:
+    print("Não é suspeito")'''
