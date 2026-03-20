@@ -95,9 +95,10 @@ else:
 #Se o valor for maior que R$100, aplique 10% de desconto.
 #Se não, não aplique desconto.
 
+'''
 valor = int(input("Digite o valor da compra: "))
 
 if valor > 100:
     desconto = valor * 0.10
     valorF = valor - desconto
-    print(valorF)
+    print(valorF)'''
